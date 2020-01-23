@@ -9,47 +9,49 @@ namespace HistoricalRatesDal
 {
     public class Currency
     {
-        public Currency(int id)
-        {
-            try
-            {
-                using (SqlConnection connection = new SqlConnection())
-                {
-                    connection.ConnectionString = Properties.Settings.Default.ArchiveDb;
-                    connection.Open();
+        //public Currency(int id)
+        //{
+        //    try
+        //    {
+        //        using (SqlConnection connection = new SqlConnection())
+        //        {
+        //            connection.ConnectionString = Properties.Settings.Default.ArchiveDb;
+        //            connection.Open();
 
-                    SqlCommand command = new SqlCommand()
-                    {
-                        Connection = connection,
-                        CommandText = "SELECT * FROM Currency WHERE id = @Id"
-                    };
+        //            SqlCommand command = new SqlCommand()
+        //            {
+        //                Connection = connection,
+        //                CommandText = "SELECT * FROM Currency WHERE id = @Id"
+        //            };
 
-                    SqlParameter parId = new SqlParameter("@Id", id);
-                    command.Parameters.Add(parId);
+        //            SqlParameter parId = new SqlParameter("@Id", id);
+        //            command.Parameters.Add(parId);
 
-                    SqlDataReader reader = command.ExecuteReader();
+        //            SqlDataReader reader = command.ExecuteReader();
 
-                    if (reader.Read())
-                    {
-                        this.EuroValue = Convert.ToDouble(reader["Value"]);
-                        this.Symbol = reader["Symbol"].ToString();
-                        this.Id = id;
-                    }
+        //            if (reader.Read())
+        //            {
+        //                this.EuroValue = Convert.ToDouble(reader["Value"]);
+        //                this.Symbol = reader["Symbol"].ToString();
+        //                this.Id = id;
+        //            }
 
-                }
+        //        }
 
 
-            }
-            catch (Exception)
-            {
+        //    }
+        //    catch (Exception)
+        //    {
 
-                throw;
-            }
-        }
+        //        throw;
+        //    }
+        //}
 
         public string Symbol { get; set; }
         public double EuroValue { get; set; }
 
         public int Id { get; set; }
+
+        public TradingDay Day { get; set; }
     }
 }

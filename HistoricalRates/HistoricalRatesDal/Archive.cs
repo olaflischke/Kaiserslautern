@@ -16,7 +16,7 @@ namespace HistoricalRatesDal
             try
             {
                 this.TradingDays = GetDataLinq(url);
-
+                SaveDataToLocalDb();
             }
             catch (HistoricalRatesDalException ex)
             {
@@ -29,9 +29,20 @@ namespace HistoricalRatesDal
             }    
         }
 
+        private void SaveDataToLocalDb()
+        {
+            ArchiveContext context = new ArchiveContext();
+
+            context.TradingDays.AddRange(this.TradingDays);
+
+            context.SaveChanges();
+        }
+
         private List<TradingDay> GetDataFromLocalDb()
         {
-            throw new NotImplementedException();
+            ArchiveContext context = new ArchiveContext();
+
+            return context.TradingDays.ToList();
         }
 
 

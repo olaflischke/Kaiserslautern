@@ -2,12 +2,12 @@
 using HistoricalRatesDal;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace HIstoricalRatesTest
+namespace HistoricalRatesTest
 {
     [TestClass]
     public class ArchiveUnitTest
     {
-        string url = "https://www.eb.europa.eu/stats/eurofxref/eurofxref-hist-90d.xml";
+        string url = "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-hist-90d.xml";
 
         [TestMethod]
         public void ArchiveInit()

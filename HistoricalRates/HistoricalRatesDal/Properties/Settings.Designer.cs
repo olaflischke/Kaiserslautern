@@ -26,6 +26,7 @@ namespace HistoricalRatesDal.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Server=(localDB)\\MSSQLLocalDb;Database=ECBCurrencies;Trusted_Connection=True;")]
         public string ArchiveDb {
             get {
                 return ((string)(this["ArchiveDb"]));
