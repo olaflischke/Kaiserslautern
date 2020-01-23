@@ -53,6 +53,7 @@
     <Compile Include="Album.cs">
       <DependentUpon>ChinookModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Anpassungen\Artist.cs" />
     <Compile Include="Artist.cs">
       <DependentUpon>ChinookModel.tt</DependentUpon>
     </Compile>
