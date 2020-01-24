@@ -35,14 +35,16 @@
             this.pgdTier = new System.Windows.Forms.PropertyGrid();
             this.btnNeueGans = new System.Windows.Forms.Button();
             this.btnNeuesSchnabeltier = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnEiLegen
             // 
-            this.btnEiLegen.Location = new System.Drawing.Point(241, 142);
-            this.btnEiLegen.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnEiLegen.Location = new System.Drawing.Point(362, 222);
+            this.btnEiLegen.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnEiLegen.Name = "btnEiLegen";
-            this.btnEiLegen.Size = new System.Drawing.Size(99, 41);
+            this.btnEiLegen.Size = new System.Drawing.Size(148, 64);
             this.btnEiLegen.TabIndex = 0;
             this.btnEiLegen.Text = "Ei legen";
             this.btnEiLegen.UseVisualStyleBackColor = true;
@@ -50,10 +52,10 @@
             // 
             // btnNeuesHuhn
             // 
-            this.btnNeuesHuhn.Location = new System.Drawing.Point(241, 31);
-            this.btnNeuesHuhn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnNeuesHuhn.Location = new System.Drawing.Point(362, 48);
+            this.btnNeuesHuhn.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnNeuesHuhn.Name = "btnNeuesHuhn";
-            this.btnNeuesHuhn.Size = new System.Drawing.Size(99, 41);
+            this.btnNeuesHuhn.Size = new System.Drawing.Size(148, 64);
             this.btnNeuesHuhn.TabIndex = 1;
             this.btnNeuesHuhn.Text = "Huhn";
             this.btnNeuesHuhn.UseVisualStyleBackColor = true;
@@ -61,10 +63,10 @@
             // 
             // btnFuettern
             // 
-            this.btnFuettern.Location = new System.Drawing.Point(241, 89);
-            this.btnFuettern.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnFuettern.Location = new System.Drawing.Point(362, 139);
+            this.btnFuettern.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnFuettern.Name = "btnFuettern";
-            this.btnFuettern.Size = new System.Drawing.Size(99, 41);
+            this.btnFuettern.Size = new System.Drawing.Size(148, 64);
             this.btnFuettern.TabIndex = 2;
             this.btnFuettern.Text = "Füttern";
             this.btnFuettern.UseVisualStyleBackColor = true;
@@ -75,27 +77,27 @@
             this.cbxTiere.DisplayMember = "Name";
             this.cbxTiere.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxTiere.FormattingEnabled = true;
-            this.cbxTiere.Location = new System.Drawing.Point(60, 41);
-            this.cbxTiere.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbxTiere.Location = new System.Drawing.Point(90, 64);
+            this.cbxTiere.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.cbxTiere.Name = "cbxTiere";
-            this.cbxTiere.Size = new System.Drawing.Size(176, 24);
+            this.cbxTiere.Size = new System.Drawing.Size(262, 33);
             this.cbxTiere.TabIndex = 3;
             this.cbxTiere.SelectedIndexChanged += new System.EventHandler(this.cbxTiere_SelectedIndexChanged);
             // 
             // pgdTier
             // 
-            this.pgdTier.Location = new System.Drawing.Point(52, 75);
-            this.pgdTier.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pgdTier.Location = new System.Drawing.Point(78, 117);
+            this.pgdTier.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pgdTier.Name = "pgdTier";
-            this.pgdTier.Size = new System.Drawing.Size(183, 222);
+            this.pgdTier.Size = new System.Drawing.Size(274, 347);
             this.pgdTier.TabIndex = 4;
             // 
             // btnNeueGans
             // 
-            this.btnNeueGans.Location = new System.Drawing.Point(346, 31);
-            this.btnNeueGans.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnNeueGans.Location = new System.Drawing.Point(519, 48);
+            this.btnNeueGans.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnNeueGans.Name = "btnNeueGans";
-            this.btnNeueGans.Size = new System.Drawing.Size(99, 41);
+            this.btnNeueGans.Size = new System.Drawing.Size(148, 64);
             this.btnNeueGans.TabIndex = 5;
             this.btnNeueGans.Text = "Gans";
             this.btnNeueGans.UseVisualStyleBackColor = true;
@@ -103,20 +105,43 @@
             // 
             // btnNeuesSchnabeltier
             // 
-            this.btnNeuesSchnabeltier.Location = new System.Drawing.Point(451, 31);
-            this.btnNeuesSchnabeltier.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnNeuesSchnabeltier.Location = new System.Drawing.Point(676, 48);
+            this.btnNeuesSchnabeltier.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnNeuesSchnabeltier.Name = "btnNeuesSchnabeltier";
-            this.btnNeuesSchnabeltier.Size = new System.Drawing.Size(99, 41);
+            this.btnNeuesSchnabeltier.Size = new System.Drawing.Size(148, 64);
             this.btnNeuesSchnabeltier.TabIndex = 6;
             this.btnNeuesSchnabeltier.Text = "Schnabeltier";
             this.btnNeuesSchnabeltier.UseVisualStyleBackColor = true;
             this.btnNeuesSchnabeltier.Click += new System.EventHandler(this.btnNeuesSchnabeltier_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(643, 197);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(148, 64);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "Laden";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(643, 267);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(148, 64);
+            this.button2.TabIndex = 8;
+            this.button2.Text = "Speichern";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(649, 339);
+            this.ClientSize = new System.Drawing.Size(974, 530);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnNeuesSchnabeltier);
             this.Controls.Add(this.btnNeueGans);
             this.Controls.Add(this.pgdTier);
@@ -124,7 +149,7 @@
             this.Controls.Add(this.btnFuettern);
             this.Controls.Add(this.btnNeuesHuhn);
             this.Controls.Add(this.btnEiLegen);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "Form1";
             this.Text = "Eierfarm";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -141,6 +166,8 @@
         private System.Windows.Forms.PropertyGrid pgdTier;
         private System.Windows.Forms.Button btnNeueGans;
         private System.Windows.Forms.Button btnNeuesSchnabeltier;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }
 

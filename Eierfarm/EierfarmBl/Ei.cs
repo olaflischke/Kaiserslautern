@@ -3,11 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace EierfarmBl
 {
     public class Ei
     {
+        private Ei()
+        {
+
+        }
+
         /// <summary>
         /// Konstruktor für ein Ei.
         /// </summary>
@@ -57,12 +63,15 @@ namespace EierfarmBl
         // Property mit autom. generiertem Backing Field
         public string Name { get; set; }
 
-        public Guid Id { get; private set; } = Guid.NewGuid();
+        [XmlAttribute(AttributeName = "UID")]
+        public Guid Id { get; set; } = Guid.NewGuid();
 
         public DateTime Legedatum { get; set; } = DateTime.Now;
 
+        [XmlIgnore]
         public Huhn Mutter { get; set; }
 
+        [XmlElement(ElementName = "Color")]
         public EiFarbe Farbe { get; set; }
 
         //public System.IO.FileInfo Datei { get; set; }

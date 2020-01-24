@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace EierfarmBl
 {
@@ -9,5 +10,6 @@ namespace EierfarmBl
 
         void EiLegen();
         void Fressen();
+
     }
 }

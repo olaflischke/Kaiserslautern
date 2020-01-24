@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Huhn xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Eier>
+    <Ei UID="bd3cd6dd-ff52-42f5-ab8c-f38fac68adb6">
+      <Gewicht2>0</Gewicht2>
+      <Gewicht>77</Gewicht>
+      <Legedatum>2020-01-24T11:31:37.1645203+01:00</Legedatum>
+      <Color>Gruen</Color>
+    </Ei>
+    <Ei UID="a306a36b-7096-4f87-9bf6-7facf02a3a9d">
+      <Gewicht2>0</Gewicht2>
+      <Gewicht>72</Gewicht>
+      <Legedatum>2020-01-24T11:31:37.3470325+01:00</Legedatum>
+      <Color>Hell</Color>
+    </Ei>
+    <Ei UID="43bec662-bc10-4212-a6e2-17240ff370ca">
+      <Gewicht2>0</Gewicht2>
+      <Gewicht>66</Gewicht>
+      <Legedatum>2020-01-24T11:31:37.5105936+01:00</Legedatum>
+      <Color>Gruen</Color>
+    </Ei>
+    <Ei UID="562ff71c-9d2e-4cd4-9c10-389ea2452e8d">
+      <Gewicht2>0</Gewicht2>
+      <Gewicht>48</Gewicht>
+      <Legedatum>2020-01-24T11:31:37.6671751+01:00</Legedatum>
+      <Color>Dunkel</Color>
+    </Ei>
+    <Ei UID="aa2457ce-4445-45f3-a6e2-4977f8931d18">
+      <Gewicht2>0</Gewicht2>
+      <Gewicht>79</Gewicht>
+      <Legedatum>2020-01-24T11:31:37.8407615+01:00</Legedatum>
+      <Color>Gruen</Color>
+    </Ei>
+  </Eier>
+  <Gewicht>1458</Gewicht>
+  <Id>c8f86cf9-b7c9-4111-a749-95510435d59a</Id>
+  <Name>Neues Huhn</Name>
+</Huhn>
